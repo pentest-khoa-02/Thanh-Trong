@@ -13,6 +13,9 @@ ES6 is the basis for modern programming languages like Angular and ReactJs. With
   -  Spread and Rest Syntaxes (…)
   -  Object.assign() and Object.is()
   -  Classes
+  -  Modules
+  -  Promise
+  -  Map and Set
 
 ### Default parameters
 
@@ -340,3 +343,80 @@ console.log(p.getName()); //prints Le
 ```
 
 ES6 also introduces new methods for existing Array Object and String Prototypes. The new methods significantly improve the way we manipulate these entities.
+
+### Modules
+
+Modules allow you to organize your code into smaller, reusable pieces. This makes it easier to manage complex projects and reduces the risk of naming collisions.
+
+```javascript
+// greeting.js
+export const greet = (name) => {
+  console.log(`Hello, ${name}!`);
+};
+
+// main.js
+import { greet } from "./greeting.js";
+greet("Trong");
+```
+
+### Promise
+
+Promises are a way to handle asynchronous operations in JavaScript. They provide a way to handle errors, and can be combined to create complex asynchronous flows.
+
+```javascript
+const fetchData = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Data fetched");
+    }, 1000);
+  });
+};
+
+fetchData().then((data) => {
+  console.log(data);
+});
+```
+
+### Map and Set
+
+The Map and Set data structures provide an efficient way to store unique values in JavaScript. They also provide a variety of useful methods for searching and manipulating the data.
+
+```javascript
+// Creating a Map
+const map = new Map();
+map.set("name", "Trong");
+map.set("age", 19);
+
+// Accessing values in a Map
+console.log(map.get("name")); // Output: Trong
+console.log(map.get("age")); // Output: 19
+
+// Iterating over a Map
+for (const [key, value] of map) {
+  console.log(`${key}: ${value}`);
+}
+
+// Output:
+// name: Trong
+// age: 19
+
+// Creating a Set
+const set = new Set();
+set.add("Trong");
+set.add("A");
+set.add("B");
+
+// Iterating over a Set
+for (const name of set) {
+  console.log(name);
+}
+
+// Output:
+// Trong
+// A
+// B
+
+// Checking if a value exists in a Set
+console.log(set.has("Trong")); // Output: true
+```
+
