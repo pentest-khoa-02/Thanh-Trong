@@ -17,7 +17,7 @@ ES6 is the basis for modern programming languages like Angular and ReactJs. With
   -  Promise
   -  Map and Set
 
-### Default parameters
+## Default parameters
 
 In JavaScript, the default value for function parameters is undefined. It may be handy to set a different value instead. This can be achieved with the help of default function parameters.
 
@@ -53,7 +53,7 @@ getFullname('Le', 'Trong', 'Le Trong'); // returns Le Trong
 
 If default parameters are defined, the scope of the default parameters is the parent to the scope created for the function body. This means that the default parameters can not provide a reference to the functions and variables declared inside the function body, and the variables inside the function body declared using var will mask default parameters with the same name.
 
-### Template literals (Template strings)
+## Template literals (Template strings)
 
 Known as Template strings in the previous editions of ES2015, Template literals allow embedded expressions, multi-line strings and string interpolation.
 
@@ -89,7 +89,7 @@ My Name is ${myName}
 I am a ${myRole}`); //newline character unnecessary
 ```
 
-### Tagged Templates
+## Tagged Templates
 
 Tagged Templates are the more advanced form of template literals.
 
@@ -112,7 +112,7 @@ The first argument to a tag function can only be an array of string values.
 
 A special raw property exists on this first argument passed to the tag function which can be used to access the raw strings as they were entered without processing the escape sequences (‘\n’).
 
-### Destructuring assignment
+## Destructuring assignment
 
 The destructuring assignment allows reading values from an array or properties from an object, into distinct variables.
 
@@ -153,7 +153,7 @@ let array = ['Le', 'Toad', 'Software Developer'];
 console.log(myName, myRole); //Le Software Developer
 ```
 
-### Arrow function expressions
+## Arrow function expressions
 
 Arrow function expressions is a new syntax to writing ordinary function expressions
 
@@ -189,7 +189,7 @@ The value of this inside an arrow function is always bound to the value of this 
 
 We cannot use new keywords with arrow functions as these are not constructible.
 
-### Let and const
+## Let and const
 
 The let statement declares a block-scoped local variable
 
@@ -241,7 +241,7 @@ const obj.firstName = 'Toad'; //acceptable, as the key is not protected
 
 Similarly, we can push new elements to a const array but can not reassign the new [array](https://www.divami.com/blog/weird-behaviour-new-array-javascript) to the const identifier.
 
-### Spread and Rest syntaxes (…)
+## Spread and Rest syntaxes (…)
 
 Rest and spread syntax use … (three dots) notation.
 
@@ -272,7 +272,7 @@ Here, the array elements are condensed to single element numbers in addNumbers�
 
 Spread and Rest are basically opposites to each other.
 
-### Object.assign() and Object.is()
+## Object.assign() and Object.is()
 
 Object.assign() method can be used to clone an object.
 
@@ -310,7 +310,7 @@ Object.is(obj1, obj1);//true, both objects have the same reference
 
 In the case of objects, both objects must have the same values and same reference to be true.
 
-### Classes
+## Classes
 
 Classes are a template for creating objects. They like functions can be defined as class declarations and class expressions and can be declared using the keyword class followed by the name of the class (say, Person).
 
@@ -344,7 +344,7 @@ console.log(p.getName()); //prints Le
 
 ES6 also introduces new methods for existing Array Object and String Prototypes. The new methods significantly improve the way we manipulate these entities.
 
-### Modules
+## Modules
 
 Modules allow you to organize your code into smaller, reusable pieces. This makes it easier to manage complex projects and reduces the risk of naming collisions.
 
@@ -359,7 +359,7 @@ import { greet } from "./greeting.js";
 greet("Trong");
 ```
 
-### Promise
+## Promise
 
 Promises are a way to handle asynchronous operations in JavaScript. They provide a way to handle errors, and can be combined to create complex asynchronous flows.
 
@@ -377,7 +377,7 @@ fetchData().then((data) => {
 });
 ```
 
-### Map and Set
+## Map and Set
 
 The Map and Set data structures provide an efficient way to store unique values in JavaScript. They also provide a variety of useful methods for searching and manipulating the data.
 
